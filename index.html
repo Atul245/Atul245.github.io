@@ -9,53 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc; /* slate-50 */
-        }
-        .section-title {
-            position: relative;
-            padding-bottom: 8px;
-            border-bottom: 3px solid #0747a1; /* Custom Sapphire color */
-        }
-        .card {
-            background-color: white;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        .link-style {
-            color: #0747a1;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .link-style:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="text-slate-700">
-    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+<body class="select-none">
+    <canvas id="interactive-bg"></canvas>
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 my-8 rounded-2xl main-container">
         <!-- Header -->
         <header class="text-center mb-10">
-            <h1 class="text-5xl font-bold text-slate-800" style="color: #0747a1;">ATUL KUMAR</h1>
-            <div class="mt-4 flex justify-center items-center space-x-4 md:space-x-6 text-slate-600 flex-wrap">
-                <a href="tel:+918579025763" class="hover:text-blue-700 transition duration-300">
+            <h1 class="text-5xl font-bold main-heading">ATUL KUMAR</h1>
+            <div class="mt-4 flex justify-center items-center space-x-4 md:space-x-6 flex-wrap header-links">
+                <a href="tel:+918579025763" class="transition duration-300">
                     <i class="fas fa-phone mr-1"></i>+91 8579025763
                 </a>
-                <a href="mailto:atulsams245@gmail.com" class="hover:text-blue-700 transition duration-300">
+                <a href="mailto:atulsams245@gmail.com" class="transition duration-300">
                     <i class="fas fa-envelope mr-1"></i>atulsams245@gmail.com
                 </a>
-                <a href="https://www.linkedin.com/in/atulkumar8/" target="_blank" class="hover:text-blue-700 transition duration-300">
+                <a href="https://www.linkedin.com/in/atulkumar8/" target="_blank" class="transition duration-300">
                     <i class="fab fa-linkedin mr-1"></i>linkedin/atulkumar8
                 </a>
-                <a href="https://github.com/Atul245" target="_blank" class="hover:text-blue-700 transition duration-300">
+                <a href="https://github.com/Atul245" target="_blank" class="transition duration-300">
                     <i class="fab fa-github mr-1"></i>github/Atul245
                 </a>
             </div>
@@ -64,18 +36,18 @@
         <main>
             <!-- Technical Skills Section -->
             <section class="mb-8">
-                <h2 class="text-2xl font-bold text-slate-800 pb-2 mb-4 section-title" style="border-color: #0747a1;">TECHNICAL SKILLS</h2>
+                <h2 class="text-2xl font-bold pb-2 mb-4 section-title">TECHNICAL SKILLS</h2>
                 <div class="space-y-6">
                     <div class="card">
-                        <h3 class="font-bold text-lg mb-2 text-blue-700">Languages</h3>
+                        <h3 class="font-bold text-lg mb-2">Languages</h3>
                         <p>C++, Python, HTML/CSS</p>
                     </div>
                     <div class="card">
-                        <h3 class="font-bold text-lg mb-2 text-blue-700">Database / Developer Tools</h3>
+                        <h3 class="font-bold text-lg mb-2">Database / Developer Tools</h3>
                         <p>SQL, Docker, GitHub, Visual Studio, Jupyter Notebook, Google Colab</p>
                     </div>
                     <div class="card">
-                        <h3 class="font-bold text-lg mb-2 text-blue-700">Technologies / Frameworks</h3>
+                        <h3 class="font-bold text-lg mb-2">Technologies / Frameworks</h3>
                         <p>NumPy, Pandas, Low-Level Design, Object-Oriented Programming, UML, Machine Learning, NLP, Computer Vision, Data Visualization, Scikit-learn</p>
                     </div>
                 </div>
@@ -83,15 +55,15 @@
 
             <!-- Projects Section -->
             <section class="mb-8">
-                <h2 class="text-2xl font-bold text-slate-800 pb-2 mb-4 section-title" style="border-color: #0747a1;">PROJECTS</h2>
+                <h2 class="text-2xl font-bold pb-2 mb-4 section-title">PROJECTS</h2>
                 <div class="space-y-6">
                     <div class="card">
                         <div class="flex justify-between items-baseline flex-wrap gap-2">
-                             <a href="https://github.com/Atul245/Wireless_Indoor_Localization" target="_blank" class="font-bold text-lg text-blue-700 hover:underline">Wireless Indoor Localization <i class="fab fa-github text-sm"></i></a>
-                             <p class="text-sm text-slate-500 font-medium">March 2024</p>
+                             <a href="https://github.com/Atul245/Wireless_Indoor_Localization" target="_blank" class="text-lg hover:underline project-link">Wireless Indoor Localization <i class="fab fa-github text-sm"></i></a>
+                             <p class="text-sm font-medium meta-text">March 2024</p>
                         </div>
-                        <p class="text-sm font-medium text-slate-600 mb-2">ML, GridSearchCV, Python, Scikit-learn</p>
-                        <ul class="list-disc list-inside space-y-1 text-slate-700">
+                        <p class="text-sm font-medium mb-2 meta-text">ML, GridSearchCV, Python, Scikit-learn</p>
+                        <ul class="list-disc list-inside space-y-1">
                              <li>Developed a system to predict user positions indoors using <strong>WiFi signal strengths</strong>, overcoming GPS limitations.</li>
                              <li>Implemented and evaluated <strong>5 ML classifiers</strong>, achieving high accuracy through rigorous model comparison.</li>
                              <li>Performed <strong>hyperparameter tuning</strong> via <strong>GridSearchCV</strong> to optimize model performance.</li>
@@ -100,11 +72,11 @@
                     </div>
                     <div class="card">
                          <div class="flex justify-between items-baseline flex-wrap gap-2">
-                            <a href="https://github.com/Atul245/Movie-recommender-system" target="_blank" class="font-bold text-lg text-blue-700 hover:underline">Movie Recommender System <i class="fab fa-github text-sm"></i></a>
-                            <p class="text-sm text-slate-500 font-medium">Jan 2024</p>
+                            <a href="https://github.com/Atul245/Movie-recommender-system" target="_blank" class="text-lg hover:underline project-link">Movie Recommender System <i class="fab fa-github text-sm"></i></a>
+                            <p class="text-sm font-medium meta-text">Jan 2024</p>
                          </div>
-                         <p class="text-sm font-medium text-slate-600 mb-2">NLP, Python, Streamlit</p>
-                         <ul class="list-disc list-inside space-y-1 text-slate-700">
+                         <p class="text-sm font-medium mb-2 meta-text">NLP, Python, Streamlit</p>
+                         <ul class="list-disc list-inside space-y-1">
                             <li>Acquired and preprocessed the <strong>TMDb dataset</strong> from Kaggle.</li>
                             <li>Transformed movies into vectors using <strong>Bag of Words</strong> and implemented <strong>cosine similarity</strong> for recommendations.</li>
                             <li>Deployed an interactive <strong>Streamlit web app</strong> on <strong>Render</strong> to provide movie recommendations and fetch posters via <strong>TMDb API</strong>.</li>
@@ -112,11 +84,11 @@
                     </div>
                     <div class="card">
                          <div class="flex justify-between items-baseline flex-wrap gap-2">
-                            <a href="https://github.com/Atul245/Age-and-Gender-Prediction" target="_blank" class="font-bold text-lg text-blue-700 hover:underline">Age and Gender Prediction <i class="fab fa-github text-sm"></i></a>
-                            <p class="text-sm text-slate-500 font-medium">Nov 2022</p>
+                            <a href="https://github.com/Atul245/Age-and-Gender-Prediction" target="_blank" class="text-lg hover:underline project-link">Age and Gender Prediction <i class="fab fa-github text-sm"></i></a>
+                            <p class="text-sm font-medium meta-text">Nov 2022</p>
                          </div>
-                         <p class="text-sm font-medium text-slate-600 mb-2">Python, Deep-learning</p>
-                         <ul class="list-disc list-inside space-y-1 text-slate-700">
+                         <p class="text-sm font-medium mb-2 meta-text">Python, Deep-learning</p>
+                         <ul class="list-disc list-inside space-y-1">
                             <li>Trained a <strong>VGG16 CNN</strong> on the <strong>UTK face dataset</strong>, achieving <strong>93% accuracy</strong> in <strong>gender classification</strong>.</li>
                             <li>Implemented <strong>VGG16</strong> for <strong>age prediction</strong>, reaching <strong>72.93% validation accuracy</strong> by optimizing model parameters.</li>
                          </ul>
@@ -126,57 +98,59 @@
             
             <!-- Certificates Section -->
             <section class="mb-8">
-                <h2 class="text-2xl font-bold text-slate-800 pb-2 mb-4 section-title" style="border-color: #0747a1;">CERTIFICATES</h2>
+                <h2 class="text-2xl font-bold pb-2 mb-4 section-title">CERTIFICATES</h2>
                 <div class="card">
                     <ul class="list-disc list-inside space-y-2">
-                        <li><a href="https://coursera.org/verify/specialization/69UEAEDJ2WR4" target="_blank" class="link-style">Natural Language Processing Specialization</a> (DeepLearning.AI & Coursera)</li>
-                        <li><a href="https://coursera.org/verify/9JW5SQGJHT7Z" target="_blank" class="link-style">Algorithmic Toolbox</a> (UC San Diego & Coursera)</li>
-                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/6Z4UNZWNKEVG" target="_blank" class="link-style">Supervised Machine Learning: Regression and Classification</a> (DeepLearning.AI, Stanford & Coursera)</li>
-                        <li><a href="https://www.hackerrank.com/certificates/3b7d9ce58dd5" target="_blank" class="link-style">Problem Solving (Basic) Certificate</a> (HackerRank)</li>
-                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/6BML5TRBXTMJ" target="_blank" class="link-style">Getting started with Git and Github</a> (Coursera)</li>
+                        <li><a href="https://coursera.org/verify/specialization/69UEAEDJ2WR4" target="_blank" class="link-style">Natural Language Processing Specialization</a> <span class="meta-text">(DeepLearning.AI & Coursera)</span></li>
+                        <li><a href="https://coursera.org/verify/9JW5SQGJHT7Z" target="_blank" class="link-style">Algorithmic Toolbox</a> <span class="meta-text">(UC San Diego & Coursera)</span></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/6Z4UNZWNKEVG" target="_blank" class="link-style">Supervised Machine Learning: Regression and Classification</a> <span class="meta-text">(DeepLearning.AI, Stanford & Coursera)</span></li>
+                        <li><a href="https://www.hackerrank.com/certificates/3b7d9ce58dd5" target="_blank" class="link-style">Problem Solving (Basic) Certificate</a> <span class="meta-text">(HackerRank)</span></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/6BML5TRBXTMJ" target="_blank" class="link-style">Getting started with Git and Github</a> <span class="meta-text">(Coursera)</span></li>
                     </ul>
                 </div>
             </section>
 
             <!-- Academic and Extracurricular Achievements Section -->
             <section class="mb-8">
-                <h2 class="text-2xl font-bold text-slate-800 pb-2 mb-4 section-title" style="border-color: #0747a1;">ACADEMIC & EXTRACURRICULAR ACHIEVEMENTS</h2>
+                <h2 class="text-2xl font-bold pb-2 mb-4 section-title">ACADEMIC & EXTRACURRICULAR ACHIEVEMENTS</h2>
                 <div class="card">
                     <ul class="list-disc list-inside space-y-2">
                         <li><strong>Gate Qualified 2024 & 2025</strong></li>
                         <li>Ranked among the <strong>top 20%</strong> of participants in <strong>LeetCode</strong> contests with the highest <strong>rating (1619)</strong>.</li>
                         <li><strong>Research paper</strong> titled <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4487016" target="_blank" class="link-style">Wireless indoor localization using ML techniques</a> was published on <strong>SSRN</strong> in <strong>2024</strong>.</li>
-                        <li>Completed <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Lyft/xSw9echtixLAoPdsH_Lyft_ruYtn6Jtm9KKinMya_1699610545648_completion_certificate.pdf" target="_blank" class="link-style"><strong>Lyft Back-End Engineering Job Simulation</strong></a> (December 2023)</li>
+                        <li>Completed <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Lyft/xSw9echtixLAoPdsH_Lyft_ruYtn6Jtm9KKinMya_1699610545648_completion_certificate.pdf" target="_blank" class="link-style"><strong>Lyft Back-End Engineering Job Simulation</strong></a> <span class="meta-text">(December 2023)</span></li>
                     </ul>
                 </div>
             </section>
 
             <!-- Education Section -->
             <section>
-                <h2 class="text-2xl font-bold text-slate-800 pb-2 mb-4 section-title" style="border-color: #0747a1;">EDUCATION</h2>
+                <h2 class="text-2xl font-bold pb-2 mb-4 section-title">EDUCATION</h2>
                 <div class="space-y-6">
                     <div class="card">
                         <div class="flex justify-between items-baseline flex-wrap gap-2">
-                            <h3 class="font-bold text-lg text-blue-700">Malviya National Institute Of Technology</h3>
-                            <p class="text-sm text-slate-500 font-medium">July 2025 - Present</p>
+                            <h3 class="font-bold text-lg">Malviya National Institute Of Technology</h3>
+                            <p class="text-sm font-medium meta-text">July 2025 - Present</p>
                         </div>
-                        <p class="italic text-slate-600">M.Tech in Embedded System</p>
-                        <p class="text-sm text-slate-500">Jaipur, India</p>
+                        <p class="italic">M.Tech in Embedded System</p>
+                        <p class="text-sm meta-text">Jaipur, India</p>
                     </div>
                     <div class="card">
                         <div class="flex justify-between items-baseline flex-wrap gap-2">
-                            <h3 class="font-bold text-lg text-blue-700">Lovely Professional University</h3>
-                            <p class="text-sm text-slate-500 font-medium">Sep 2020 - July 2024</p>
+                            <h3 class="font-bold text-lg">Lovely Professional University</h3>
+                            <p class="text-sm font-medium meta-text">Sep 2020 - July 2024</p>
                         </div>
-                        <p class="italic text-slate-600">B.Tech in Computer Science</p>
-                        <p class="text-sm text-slate-500">Phagwara, India</p>
+                        <p class="italic">B.Tech in Computer Science</p>
+                        <p class="text-sm meta-text">Phagwara, India</p>
                     </div>
                 </div>
             </section>
         </main>
     </div>
+    
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
 

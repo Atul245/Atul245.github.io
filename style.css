@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a; /* slate-900 */
+    color: #cbd5e1; /* slate-300 */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+#interactive-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind content */
+}
+.main-container {
+    position: relative; /* Needed to be on top of the canvas */
+    z-index: 1;
+    background-color: rgba(15, 23, 42, 0.8); /* slate-900 with opacity */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.1);
+}
+.main-heading {
+    color: #38bdf8; /* sky-400 */
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+.section-title {
+    color: #e2e8f0; /* slate-200 */
+    padding-bottom: 8px;
+    border-bottom: 2px solid #38bdf8; /* sky-400 */
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+}
+.card {
+    background-color: rgba(30, 41, 59, 0.7); /* slate-800 with opacity */
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid #475569; /* slate-600 */
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: #38bdf8; /* sky-400 */
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+.link-style {
+    color: #38bdf8; /* sky-400 */
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-shadow 0.3s;
+}
+.link-style:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}
+.project-link {
+    color: #7dd3fc; /* sky-300 */
+    font-weight: 700;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.project-link:hover {
+    color: #e0f2fe; /* sky-100 */
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.7);
+}
+.header-links {
+    color: #94a3b8; /* slate-400 */
+}
+.header-links a:hover {
+    color: #e0f2fe; /* sky-100 */
+}
+.card h3 {
+    color: #e2e8f0; /* slate-200 */
+}
+.meta-text { /* for dates and technologies */
+    color: #94a3b8; /* slate-400 */
+}
+strong {
+    color: #e0f2fe; /* sky-100 */
+    font-weight: 600;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 50;
+    background-color: #38bdf8; /* sky-400 */
+    color: #0f172a; /* slate-900 */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+    animation: bounce 2s infinite ease-in-out;
+}
+
+#scrollTopBtn:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    animation-play-state: paused; /* Stop bouncing on hover */
+}
